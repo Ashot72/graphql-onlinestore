@@ -1,0 +1,47 @@
+
+body {
+    padding-top:60px; 
+    font-size: 14px;
+    overflow-x: hidden;
+}
+
+.optimistic {
+  color: silver;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.header {    
+    background-color: #5185bf;
+    color: white;
+}
+
+.column {
+    padding-top: 10px;
+    padding-bottom: 6px;
+    padding-left: 3px;
+    word-wrap: break-word;
+}
+
+.odd {
+    background-color:wheat;
+}
+
+.even {
+    background-color:beige;
+}
+
+.center {
+  text-align: center;
+}
+
+.large-input {
+    max-width: 700px;
+}
+
+.small-input {
+    width: 120px;
+}
