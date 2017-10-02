@@ -5,7 +5,7 @@ To get started.
        Clone the repository
    
        git clone https://github.com/Ashot72/graphql-onlinestore.git
-       cd onlinestore
+       cd graphql-onlinestore
        cd server && npm install OR yarn install
        cd ../client && npm install OR yarn install
        
