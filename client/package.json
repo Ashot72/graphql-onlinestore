@@ -19,7 +19,6 @@
     "subscriptions-transport-ws": "^0.7.3"
   },
   "devDependencies": {
-    "eslint-config-rallycoding": "^3.2.0",
     "react-scripts": "0.9.3"
   },
   "scripts": {
