@@ -83,7 +83,8 @@ The Name and Description of a newly added category will be grayish for a half se
 <br/><br/>
 <a href="http://dev.apollodata.com/react/mutations.html#optimistic-ui" target="_blank">http://dev.apollodata.com/react/mutations.html#optimistic-ui</a>
 <br/><br/>
-The application immediately updates the UI instead of waiting for the server response. We know the shape of the data we expect to receive from the server and we fake it until get a response.
+The application immediately updates the UI instead of waiting for the server response. We know the shape of the
+ data we expect to receive from the server and we fake it until get a response.<br/>
 To navigate category’s products page just click on ‘View Products’.
 </p>
 
@@ -113,7 +114,8 @@ Apollo’s update is used to update the UI.
 <br/></br>
 <a href="http://dev.apollodata.com/react/cache-updates.html#directAccess" target="_blank">http://dev.apollodata.com/react/cache-updates.html#directAccess</a>
 <br/><br/>
-Cached data are read from the store and the newly created product was added to the server. We have products in the cache as we clicked ‘Add Product’ link from the products page (Figure 10).
+Cached data are read from the store and the newly created product was added to the server. We have products in the cache as we clicked ‘Add Product’ 
+link from the products page (Figure 10).<br/>
 This time let’s add a product in a different way to see the difference.
 </p>
 
@@ -122,7 +124,7 @@ This time let’s add a product in a different way to see the difference.
 Figure 13
 
 <p>
-This time <b>refresh your browser</b> before adding a product. 
+Refresh your browser</b> before adding a product. 
 </p>
 
 <img src="images/Figure14.png" />
@@ -130,7 +132,7 @@ This time <b>refresh your browser</b> before adding a product.
 Figure 14
 
 <p>
-This time the product was added and the last graphql request was ‘products’ query to obtain products from the server because the products were not in the cache. 
+The product was added and the last graphql request was ‘products’ query to obtain products from the server because the products were not in the cache. 
 Another option instead of ‘update’ is ‘refetchQueries’ which is client-server roundtrip to refetch data. (The application uses refetchQueries’ as well)
 <br/></br>
 <a href="http://dev.apollodata.com/react/cache-updates.html#refetchQueries" target="_blank">http://dev.apollodata.com/react/cache-updates.html#refetchQueries</a>
@@ -173,7 +175,7 @@ but because we requested different query, Apollo Client does not know that. We d
 Figure 18
 
 <p>
-If we comment out the resolver code and navigate from categories page to edit category page the same way, we will see that graphql request is made to obtain the category data.
+If we comment the resolver code and navigate from categories page to edit category page the same way, we will see that graphql request is made to obtain the category data.
 </p>
 
 <img src="images/Figure19.png" />
@@ -315,7 +317,7 @@ This time you will always see the ‘Loading orders…’ line when you click �
 The fetch policy is an option which allows you to specify how you want to your component to interact with the Apollo data cache.<br/>
 Th application uses ‘cache-and-network’.  This fetch policy will have Apollo first trying to read data from your cache.
  If all the data needed to fulfill your query is in the cache then that data will be returned. However, regardless of
- whether or not the full data is in your cache this fetchPolicy will always execute query with the network interface.<br/>
+ whether or not the full data is in your cache this fetchPolicy will always execute query with the network interface.<br/><br/>
 Sometimes we want to see real time updates in our application. It can be done via GraphQL Subscriptions. Via GraphQL 
 subscriptions the server sends data to clients when a specific event happens on the backend. 
 Subscriptions are usually implemented with WebSockets holding steady connection between server and the client.
@@ -337,14 +339,14 @@ Let’s open two browsers. One of them displays products under ‘Beauty & Healt
 Figure 34
 
 <p>
-Once the product has been added, you will see it on the products list in same category.
+Once the product has been added, you will see it on the products list in same category without refreshing the browser.
 <br/></br>
 <a href="http://dev.apollodata.com/react/subscriptions.html#subscribe-to-more" target="_blank">http://dev.apollodata.com/react/subscriptions.html#subscribe-to-more</a>
 <br/><br/>
 ‘subscribeToMore’ is a convenient way to update the result of a single query with a subscription (used in the application).
 </p>
 <p>
-When a product is removed from the category then it is also removed from the order page but order still remains.
+When a product is removed from the category then it is also removed from the order page but the order still remains.
 </p>
 
 <img src="images/Figure35.png" />
@@ -376,7 +378,7 @@ Deleting.
 Figure 38
 
 <p>
-Order without the product information.
+The order without the product information.
 </p>
 <p>
 In GraphQL field resolvers are just functions that are called independently of one another.
@@ -408,7 +410,7 @@ With MongoDB logger, you will track MongoDB query requests. There are 24 request
 Figure 41
 
 <p>
-More than one request for the same user.
+More than one request for the same user.<br/><br/>
 ‘DataLoader’ library from Facebook will help to avoid unnecessary multiple requests to services like MongoDB. It supports query batching and caching out of the box.
 <br/></br>
 <a href="https://github.com/facebook/dataloader" target="_blank">https://github.com/facebook/dataloader</a>
