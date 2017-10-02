@@ -41,3 +41,5 @@ Client
 
 -  _react\_bootstrap -_ bootstrap framework rebuilt for React.
 
+Go to [Online Store description]( https://ashot72.github.io/graphql-onlinestore/)
+
