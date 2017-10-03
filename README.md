@@ -20,7 +20,8 @@ To get started.
        npm start OR yarn start
 ```     
 Navigate to localhost:3000 to explore the current state of the online store. The server is running on localhost:4000. You can navigate to localhost:4000/graphiql which will load a graphical _/ˈɡrafək(ə)l/,_ 
-_interactive in-browser GraphQL IDE. With graphical you can test write, validate and test GraphQL queries_
+interactive in-browser GraphQL IDE. With graphical you can test write, validate and test GraphQL queries_
+
 Server
 
 - _Express_, a web framework for Node.js (Node.js 8.0 ++ as async/await is used).
